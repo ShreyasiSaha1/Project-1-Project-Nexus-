@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Responsive Login & Signup Page</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+          <div class="box lgnbox">
+               <div class="details dtlogin">
+                 <h2>Login</h2> 
+                   <div class="box-wrapper">
+                    <label for="">Username</label>
+                     <input type="text" placeholder="Enter your username">
+                     
+                   </div>
+                   <div class="box-wrapper">
+                    <label for="">Password</label>
+                     <input type="password" placeholder="Enter your password">
+                     
+                   </div>
+                   <button id="btnlgn">Login</button>
+                   <p>Don't have account? <a href="#" id="lnk-lg">Signup</a></p>
+               </div>
+          
+          <div class="sgnbox">
+               <div class="details dtsignup">
+                 <h2>Signup</h2> 
+                   <div class="box-wrapper">
+                    <label for="">Username</label>
+                     <input type="text" placeholder="Enter your username">
+                     
+                   </div>
+                   <div class="box-wrapper">
+                    <label for="">Password</label>
+                     <input type="password" placeholder="Enter your password">
+                     
+                   </div>
+                   <div class="box-wrapper">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Enter your email">
+                    
+                  </div>
+                   <button id="btnsgn">Signup</button>
+                   <p>Already have account? <a href="##" id="lnk-sg">Login</a></p>
+               </div>
+          </div>
+     </div>
+     <script>
+      let detlg=document.querySelector(".dtlogin");
+      let detsg=document.querySelector(".dtsignup")
+      let linklg=document.querySelector("#lnk-lg");
+      let linksg=document.querySelector("#lnk-sg");
+      function callsign(){
+         detlg.classList.toggle("callreg");
+         detsg.classList.toggle("setreg");
+      }
+         
+      linklg.addEventListener("click",callsign);
+      linksg.addEventListener("click",callsign);
+
+     </script>
+</body>
+</html>
